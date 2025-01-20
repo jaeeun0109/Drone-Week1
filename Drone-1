@@ -1,0 +1,9 @@
+//드론 연결 및 기본 상태 확인(환경설정하기)
+
+from djitellopy import Tello
+ # 드론 객체 생성
+tello = Tello()
+ # 드론 연결
+tello.connect()
+ # 배터리 확인
+print(f"배터리 잔량: {tello.get_battery()}%")
